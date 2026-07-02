@@ -3,6 +3,8 @@ use LPUDB;
 
 desc student_LPU;
 
+-- we use keys and constraints for database designing
+
 -- keys
 
 -- Primary ;- Unique, Not Null, not duplicate values, One key per table
