@@ -65,11 +65,14 @@ ON Od.ProductID = P.ProductID;
 -- Total Bill For each Product Purchased
 
 SELECT 
-P.ProductName, 
+P.ProductName, P.Price, Od.QUANTITY,
 (P.Price) * (Od.QUANTITY) AS Total_Bill
-FROM Product AS P
+FROM Products AS P
 INNER JOIN Orderdetails AS Od
 ON P.ProductID = Od.ProductID;
+
+
+
 
 
 
