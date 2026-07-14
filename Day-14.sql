@@ -180,7 +180,11 @@ SELECT first_name, hire_date, DATE_ADD(hire_date, INTERVAL 3 YEAR) AS eligible_f
 
 -- FIND THE LAST DATE OF MONTH IN WHICH EACH EMPLOYEE WAS BORN
 
-SELECT first_name, FROM employees;
+SELECT first_name,
+       birth_date,
+       LAST_DAY(birth_date) AS last_date_of_birth_month
+FROM employees;
+
 
 -- LIST OF EMPLOYEE HIRED IN THE LAST 5 YEARS, ORDERED BY THE MOST RECENTLY HIRED FIRST
 
