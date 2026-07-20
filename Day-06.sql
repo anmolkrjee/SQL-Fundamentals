@@ -5,6 +5,8 @@ desc student_LPU;
 
 -- we use keys and constraints for database designing
 
+-- for designing a blueprint 
+
 -- keys
 
 -- Primary ;- Unique, Not Null, not duplicate values, One key per table
